@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04050B22BDF0BD1002B93D4 /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04050B12BDF0BD1002B93D4 /* RemoteAddAccount.swift */; };
+		E04050B42BDF0C09002B93D4 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04050B32BDF0C09002B93D4 /* HttpPostClient.swift */; };
 		E078D83E2BDC3CCA0062E10C /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078D83D2BDC3CCA0062E10C /* AddAccount.swift */; };
 		E078D8402BDC40580062E10C /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078D83F2BDC40580062E10C /* AccountModel.swift */; };
 		E078D8682BDC43480062E10C /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E078D8602BDC43480062E10C /* Data.framework */; };
@@ -48,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E04050B12BDF0BD1002B93D4 /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		E04050B32BDF0C09002B93D4 /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		E078D8362BDC3BAF0062E10C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E078D83D2BDC3CCA0062E10C /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		E078D83F2BDC40580062E10C /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		E078D8612BDC43480062E10C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E04050B12BDF0BD1002B93D4 /* RemoteAddAccount.swift */,
+				E04050B32BDF0C09002B93D4 /* HttpPostClient.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 					};
 					E078D85F2BDC43480062E10C = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 					E078D8662BDC43480062E10C = {
 						CreatedOnToolsVersion = 15.3;
@@ -294,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04050B42BDF0C09002B93D4 /* HttpPostClient.swift in Sources */,
+				E04050B22BDF0BD1002B93D4 /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,10 +532,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WXQ8GLHA2M;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -550,6 +560,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -558,10 +569,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WXQ8GLHA2M;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -592,6 +604,7 @@
 		E078D8712BDC43480062E10C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WXQ8GLHA2M;
@@ -609,6 +622,7 @@
 		E078D8722BDC43480062E10C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WXQ8GLHA2M;
